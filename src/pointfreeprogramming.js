@@ -1,5 +1,6 @@
-const arr = [1, 2, 3];
-
 const double = x => x * 2;
+const pointfreeDouble = arr => arr.map(double);
 
-console.log(arr.map(double));
+module.exports = {
+    pointfreeDouble,
+};
